@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "F036E9A4-74BB-47A3-B3F8-5A45C9E75DB6",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PhotoSwipe.xcodeproj",
+      "identifier" : "E81234510001",
+      "name" : "PhotoSwipe"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:PhotoSwipe.xcodeproj",
+        "identifier" : "93B2BF9A2F34B0C1003BCE22",
+        "name" : "PhotoSwipeUITests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:PhotoSwipe.xcodeproj",
+        "identifier" : "9356DB892F35E5C300E9073E",
+        "name" : "PhotoSwipeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

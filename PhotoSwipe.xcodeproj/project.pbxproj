@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E81234560001 /* PhotoSwipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550001 /* PhotoSwipeApp.swift */; };
+		E81234560002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550002 /* ContentView.swift */; };
+		E81234560003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81234550003 /* Assets.xcassets */; };
+		E81234560004 /* PhotoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550004 /* PhotoCardView.swift */; };
+		E81234560006 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550006 /* PhotoModel.swift */; };
+		E81234560007 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550007 /* SwipeAction.swift */; };
+		E81234560008 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550008 /* CardStackView.swift */; };
+		E81234560009 /* FilmStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550010 /* FilmStripView.swift */; };
+		E81234560011 /* SwipeEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550011 /* SwipeEffectView.swift */; };
+		E81234560012 /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550012 /* ImageCacheService.swift */; };
+		E81234560013 /* DeleteQueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550013 /* DeleteQueueManager.swift */; };
+		E81234560014 /* PhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550014 /* PhotoRepository.swift */; };
+		E81234560015 /* PhotoAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550015 /* PhotoAuthorizationService.swift */; };
+		E81234560016 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550016 /* Constants.swift */; };
+		E81234560017 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550017 /* ContentViewModel.swift */; };
+		E81234560018 /* CardStackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550018 /* CardStackViewModel.swift */; };
+		E81234560019 /* DeleteReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81234550019 /* DeleteReviewView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9356DB8E2F35E5C300E9073E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81234500001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81234510001;
+			remoteInfo = PhotoSwipe;
+		};
+		93B2BFA12F34B0C1003BCE22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81234500001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81234510001;
+			remoteInfo = PhotoSwipe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9356DB8A2F35E5C300E9073E /* PhotoSwipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoSwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		937F63CB2F35EEEC008AF7F2 /* PhotoSwipe.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PhotoSwipe.xctestplan; sourceTree = "<group>"; };
+		93B2BF9B2F34B0C1003BCE22 /* PhotoSwipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoSwipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81234540001 /* PhotoSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81234550001 /* PhotoSwipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSwipeApp.swift; sourceTree = "<group>"; };
+		E81234550002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E81234550003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E81234550004 /* PhotoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCardView.swift; sourceTree = "<group>"; };
+		E81234550006 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		E81234550007 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		E81234550008 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		E81234550009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81234550010 /* FilmStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmStripView.swift; sourceTree = "<group>"; };
+		E81234550011 /* SwipeEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeEffectView.swift; sourceTree = "<group>"; };
+		E81234550012 /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
+		E81234550013 /* DeleteQueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteQueueManager.swift; sourceTree = "<group>"; };
+		E81234550014 /* PhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepository.swift; sourceTree = "<group>"; };
+		E81234550015 /* PhotoAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAuthorizationService.swift; sourceTree = "<group>"; };
+		E81234550016 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E81234550017 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		E81234550018 /* CardStackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackViewModel.swift; sourceTree = "<group>"; };
+		E81234550019 /* DeleteReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteReviewView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9356DB8B2F35E5C300E9073E /* PhotoSwipeTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PhotoSwipeTests; sourceTree = "<group>"; };
+		93B2BF9C2F34B0C1003BCE22 /* PhotoSwipeUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PhotoSwipeUITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9356DB872F35E5C300E9073E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B2BF982F34B0C1003BCE22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81234530001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E81234520001 = {
+			isa = PBXGroup;
+			children = (
+				937F63CB2F35EEEC008AF7F2 /* PhotoSwipe.xctestplan */,
+				E81234520002 /* PhotoSwipe */,
+				93B2BF9C2F34B0C1003BCE22 /* PhotoSwipeUITests */,
+				9356DB8B2F35E5C300E9073E /* PhotoSwipeTests */,
+				E81234520003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E81234520002 /* PhotoSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				E81234550009 /* Info.plist */,
+				E81234550001 /* PhotoSwipeApp.swift */,
+				E81234550002 /* ContentView.swift */,
+				E81234520007 /* Core */,
+				E81234520004 /* Views */,
+				E81234520008 /* ViewModels */,
+				E81234520005 /* Models */,
+				E81234520006 /* Services */,
+				E81234550003 /* Assets.xcassets */,
+			);
+			path = PhotoSwipe;
+			sourceTree = "<group>";
+		};
+		E81234520003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E81234540001 /* PhotoSwipe.app */,
+				93B2BF9B2F34B0C1003BCE22 /* PhotoSwipeUITests.xctest */,
+				9356DB8A2F35E5C300E9073E /* PhotoSwipeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E81234520004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E81234550004 /* PhotoCardView.swift */,
+				E81234550008 /* CardStackView.swift */,
+				E81234550010 /* FilmStripView.swift */,
+				E81234550011 /* SwipeEffectView.swift */,
+				E81234550019 /* DeleteReviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E81234520005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E81234550006 /* PhotoModel.swift */,
+				E81234550007 /* SwipeAction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E81234520006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E81234550012 /* ImageCacheService.swift */,
+				E81234550013 /* DeleteQueueManager.swift */,
+				E81234550014 /* PhotoRepository.swift */,
+				E81234550015 /* PhotoAuthorizationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E81234520007 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E81234550016 /* Constants.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E81234520008 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E81234550017 /* ContentViewModel.swift */,
+				E81234550018 /* CardStackViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9356DB892F35E5C300E9073E /* PhotoSwipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9356DB922F35E5C300E9073E /* Build configuration list for PBXNativeTarget "PhotoSwipeTests" */;
+			buildPhases = (
+				9356DB862F35E5C300E9073E /* Sources */,
+				9356DB872F35E5C300E9073E /* Frameworks */,
+				9356DB882F35E5C300E9073E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9356DB8F2F35E5C300E9073E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9356DB8B2F35E5C300E9073E /* PhotoSwipeTests */,
+			);
+			name = PhotoSwipeTests;
+			packageProductDependencies = (
+			);
+			productName = PhotoSwipeTests;
+			productReference = 9356DB8A2F35E5C300E9073E /* PhotoSwipeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93B2BF9A2F34B0C1003BCE22 /* PhotoSwipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B2BFA52F34B0C1003BCE22 /* Build configuration list for PBXNativeTarget "PhotoSwipeUITests" */;
+			buildPhases = (
+				93B2BF972F34B0C1003BCE22 /* Sources */,
+				93B2BF982F34B0C1003BCE22 /* Frameworks */,
+				93B2BF992F34B0C1003BCE22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93B2BFA22F34B0C1003BCE22 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				93B2BF9C2F34B0C1003BCE22 /* PhotoSwipeUITests */,
+			);
+			name = PhotoSwipeUITests;
+			packageProductDependencies = (
+			);
+			productName = PhotoSwipeUITests;
+			productReference = 93B2BF9B2F34B0C1003BCE22 /* PhotoSwipeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E81234510001 /* PhotoSwipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81234570001 /* Build configuration list for PBXNativeTarget "PhotoSwipe" */;
+			buildPhases = (
+				E81234530002 /* Sources */,
+				E81234530001 /* Frameworks */,
+				E81234530003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoSwipe;
+			productName = PhotoSwipe;
+			productReference = E81234540001 /* PhotoSwipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E81234500001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					9356DB892F35E5C300E9073E = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = E81234510001;
+					};
+					93B2BF9A2F34B0C1003BCE22 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = E81234510001;
+					};
+					E81234510001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E81234570002 /* Build configuration list for PBXProject "PhotoSwipe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E81234520001;
+			productRefGroup = E81234520003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E81234510001 /* PhotoSwipe */,
+				93B2BF9A2F34B0C1003BCE22 /* PhotoSwipeUITests */,
+				9356DB892F35E5C300E9073E /* PhotoSwipeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9356DB882F35E5C300E9073E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B2BF992F34B0C1003BCE22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81234530003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81234560003 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9356DB862F35E5C300E9073E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B2BF972F34B0C1003BCE22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81234530002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81234560001 /* PhotoSwipeApp.swift in Sources */,
+				E81234560002 /* ContentView.swift in Sources */,
+				E81234560004 /* PhotoCardView.swift in Sources */,
+				E81234560006 /* PhotoModel.swift in Sources */,
+				E81234560007 /* SwipeAction.swift in Sources */,
+				E81234560008 /* CardStackView.swift in Sources */,
+				E81234560009 /* FilmStripView.swift in Sources */,
+				E81234560011 /* SwipeEffectView.swift in Sources */,
+				E81234560012 /* ImageCacheService.swift in Sources */,
+				E81234560013 /* DeleteQueueManager.swift in Sources */,
+				E81234560014 /* PhotoRepository.swift in Sources */,
+				E81234560015 /* PhotoAuthorizationService.swift in Sources */,
+				E81234560016 /* Constants.swift in Sources */,
+				E81234560017 /* ContentViewModel.swift in Sources */,
+				E81234560018 /* CardStackViewModel.swift in Sources */,
+				E81234560019 /* DeleteReviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9356DB8F2F35E5C300E9073E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81234510001 /* PhotoSwipe */;
+			targetProxy = 9356DB8E2F35E5C300E9073E /* PBXContainerItemProxy */;
+		};
+		93B2BFA22F34B0C1003BCE22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81234510001 /* PhotoSwipe */;
+			targetProxy = 93B2BFA12F34B0C1003BCE22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9356DB902F35E5C300E9073E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LTV2H5YBMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mircoporetti.PhotoSwipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoSwipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoSwipe";
+			};
+			name = Debug;
+		};
+		9356DB912F35E5C300E9073E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LTV2H5YBMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mircoporetti.PhotoSwipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoSwipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoSwipe";
+			};
+			name = Release;
+		};
+		93B2BFA32F34B0C1003BCE22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LTV2H5YBMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mircoporetti.PhotoSwipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoSwipe;
+			};
+			name = Debug;
+		};
+		93B2BFA42F34B0C1003BCE22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LTV2H5YBMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mircoporetti.PhotoSwipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoSwipe;
+			};
+			name = Release;
+		};
+		E81234580001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E81234580002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E81234580003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LTV2H5YBMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoSwipe/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "PhotoSwipe needs access to your photo library to help you organize and clean up your photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mircoporetti.photoswipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E81234580004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LTV2H5YBMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoSwipe/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "PhotoSwipe needs access to your photo library to help you organize and clean up your photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mircoporetti.photoswipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9356DB922F35E5C300E9073E /* Build configuration list for PBXNativeTarget "PhotoSwipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9356DB902F35E5C300E9073E /* Debug */,
+				9356DB912F35E5C300E9073E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B2BFA52F34B0C1003BCE22 /* Build configuration list for PBXNativeTarget "PhotoSwipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B2BFA32F34B0C1003BCE22 /* Debug */,
+				93B2BFA42F34B0C1003BCE22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81234570001 /* Build configuration list for PBXNativeTarget "PhotoSwipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81234580003 /* Debug */,
+				E81234580004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81234570002 /* Build configuration list for PBXProject "PhotoSwipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81234580001 /* Debug */,
+				E81234580002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E81234500001 /* Project object */;
+}
